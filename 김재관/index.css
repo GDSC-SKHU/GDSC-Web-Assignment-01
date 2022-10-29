@@ -38,7 +38,8 @@ p {
 .hyojung-profile {
     width: 300px;
     min-height: 300px;
-    margin-top: 15%;
+    /* ? 왜 height로 값을 고정하면 하면 하위 태그인 img의 애니메이션시 줄어들까요? justify content center 때문이었네요..*/
+    margin-top: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
