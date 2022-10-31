@@ -1,9 +1,9 @@
 * {
     margin: 0;
     padding: 0;
+    /* 전체에 z-index를 적용하면 이미지까지 적용이 됨 */
     width: 100%;
     height: 100%;
-    z-index: 1;
     color: white;
     font-family: 'Noto Sans KR', sans-serif;
 }
@@ -12,6 +12,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #121212;
+    z-index: 2;
 }
 
 h1 {
@@ -31,6 +33,7 @@ section {
 
 
 .hyojung-profile {
+    z-index: 4;
     width: 300px;
     min-height: 300px;
     /* ? 왜 height로 값을 고정하면 하면 하위 태그인 img의 애니메이션시 줄어들까요? justify content center 때문이었네요..*/
@@ -43,6 +46,7 @@ section {
 }
 
 .hyojung-profile>img {
+    z-index: 4;
     width: 0px;
     height: 0px;
     object-fit: cover;
@@ -95,16 +99,15 @@ article {
 }
 
 .black-background {
-    z-index: 0;
+    z-index: 3;
     position: fixed;
-    background-color: #121212;
-    height: 0%;
+    background-color: white;
+    height: 100%;
     animation-duration: 1.0s;
     animation-delay: 0.4s;
     animation-name: pull-down;
     animation-fill-mode: forwards;
-    align-self: flex-start;
-
+    align-self: flex-end;
     width: 100%;
 
 
@@ -116,12 +119,12 @@ article {
 @keyframes pull-down {
     from {
 
-        height: 0%;
+        height: 100%;
     }
 
     to {
 
-        height: 100%;
+        height: 0%;
     }
 
 }
