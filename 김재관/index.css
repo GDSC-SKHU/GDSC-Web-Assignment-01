@@ -74,7 +74,8 @@ article {
     border: 1px solid gray;
     width: min-content;
     height: min-content;
-    transition: all 0.3s
+    transition: transform 0.3s, border-color 0.3s 0.2s;
+
 }
 
 
@@ -84,7 +85,8 @@ article {
     white-space: nowrap;
     /* 줄바꿈 방지 */
     font-weight: 400;
-    transition: all 0.3s 0.2s
+    /* transition: all 0.3s 0.2s; */
+
 }
 
 .tagbox:hover {
