@@ -17,7 +17,7 @@ body {
 h1 {
     font-weight: 350;
     text-align: center;
-
+    height: 300px;
     margin-top: 20px;
 
 }
@@ -28,11 +28,6 @@ section {
     align-items: center;
     flex-direction: column;
 }
-
-p {
-    color: white;
-}
-
 
 
 .hyojung-profile {
@@ -61,8 +56,39 @@ p {
 }
 
 article {
-    min-height: 1110px;
+    width: 55rem;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    /* 행간 조절 */
 }
+
+
+.tagbox {
+    border: 1px solid white;
+    width: min-content;
+    height: min-content;
+    transition: all 0.3s
+}
+
+
+.tagbox>p {
+    margin: 2px 6px;
+    font-size: 30px;
+    white-space: nowrap;
+    /* 줄바꿈 방지 */
+    font-weight: 400;
+    transition: all 0.3s 0.2s
+}
+
+.tagbox:hover {
+    transform: translateY(-10px);
+    border-color: gray;
+}
+
+.tagbox>p:hover {}
+
 
 .hyojung-profile:hover {
     transform: translateY(-15px);
