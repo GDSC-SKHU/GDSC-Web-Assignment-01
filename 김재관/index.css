@@ -13,7 +13,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #121212;
-    z-index: 2;
+
 }
 
 h1 {
@@ -46,7 +46,7 @@ section {
 }
 
 .hyojung-profile>img {
-    z-index: 4;
+    z-index: 2;
     width: 0px;
     height: 0px;
     object-fit: cover;
@@ -65,12 +65,13 @@ article {
     gap: 10px;
     flex-wrap: wrap;
     align-content: flex-start;
+    z-index: 3;
     /* 행간 조절 */
 }
 
 
 .tagbox {
-    border: 1px solid white;
+    border: 1px solid gray;
     width: min-content;
     height: min-content;
     transition: all 0.3s
@@ -88,7 +89,7 @@ article {
 
 .tagbox:hover {
     transform: translateY(-10px);
-    border-color: gray;
+    border-color: white;
 }
 
 .tagbox>p:hover {}
