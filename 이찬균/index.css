@@ -1,0 +1,114 @@
+html,
+body {
+  background-color: #fff8f4;
+  color: #3f3f3f;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Do Hyeon", sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+h1 {
+  margin: 30px 0px;
+}
+nav {
+  background-color: #fff8f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  padding: 10px 0px;
+}
+a {
+  all: unset;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+nav a:hover {
+  transform: translateY(-2px);
+  border-bottom: 2px solid #f3d9c8;
+}
+.main-image > img {
+  width: 70vw;
+  max-width: 600px;
+  border-radius: 20px;
+  box-shadow: 4px 4px 60px rgba(0, 0, 0, 30%);
+}
+
+.totop:hover {
+  color: #252525;
+}
+.title {
+  text-align: center;
+  color: #d1b7ae;
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+.info {
+  margin-left: 20px;
+}
+.animal-image {
+  width: 35vw;
+  max-width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.sports-image {
+  width: 35vw;
+  max-width: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+figure {
+  display: inline-block;
+}
+article {
+  margin-bottom: 30px;
+}
+.animal div img {
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 30%);
+}
+
+.totop {
+  display: scroll;
+  position: fixed;
+  bottom: 30px;
+  right: 10px;
+  color: #d1b9ae;
+}
+.map {
+  width: 70vw;
+  max-width: 600px;
+}
+#Address {
+  margin-bottom: 100px;
+}
+footer { 
+  background-color: #EDE5DE;
+  height: 200px;
+  width: 100%;
+  padding: 30px;
+  padding-left: 100px;
+}
+.gdsc {
+  width: 70px;
+}
+.footer {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: row;
+}
+.pd {
+  color: #D1B7AE; 
+}
