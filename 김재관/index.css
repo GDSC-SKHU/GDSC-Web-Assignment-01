@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* 전체에 z-index를 적용하면 이미지까지 적용이 됨 */
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #121212;
+
+}
+
+h1 {
+    font-weight: 350;
+    text-align: center;
+    height: 300px;
+    margin-top: 20px;
+
+}
+
+section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.hyojung-profile {
+    z-index: 4;
+    width: 300px;
+    min-height: 300px;
+    /* ? 왜 height로 값을 고정하면 하면 하위 태그인 img의 애니메이션시 줄어들까요? justify content center 때문이었네요..*/
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s;
+
+}
+
+.hyojung-profile>img {
+    z-index: 2;
+    width: 0px;
+    height: 0px;
+    object-fit: cover;
+    border-radius: 50%;
+
+    animation-duration: 0.5s;
+    animation-name: big-bang;
+    animation-fill-mode: forwards;
+    transform-origin: center;
+
+}
+
+article {
+    width: 58rem;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    z-index: 3;
+    /* 행간 조절 */
+}
+
+
+.tagbox {
+    border: 1px solid gray;
+    width: min-content;
+    height: min-content;
+    transition: transform 0.3s, border-color 0.3s 0.2s;
+
+}
+
+
+.tagbox>p {
+    margin: 2px 6px;
+    font-size: 30px;
+    white-space: nowrap;
+    /* 줄바꿈 방지 */
+    font-weight: 400;
+    /* transition: all 0.3s 0.2s; */
+
+}
+
+.tagbox:hover {
+    transform: translateY(-10px);
+    border-color: white;
+}
+
+.tagbox>p:hover {}
+
+
+.hyojung-profile:hover {
+    transform: translateY(-15px);
+}
+
+.black-background {
+    z-index: 3;
+    position: fixed;
+    background-color: white;
+    height: 100%;
+    animation-duration: 1.0s;
+    animation-delay: 0.4s;
+    animation-name: pull-down;
+    animation-fill-mode: forwards;
+    align-self: flex-end;
+    width: 100%;
+
+
+
+
+}
+
+/* annimation */
+@keyframes pull-down {
+    from {
+
+        height: 100%;
+    }
+
+    to {
+
+        height: 0%;
+    }
+
+}
+
+@keyframes big-bang {
+    from {
+        width: 1px;
+        height: 1px;
+
+    }
+
+    to {
+        width: 300px;
+        height: 300px;
+    }
+
+}

@@ -1,0 +1,100 @@
+html, body {
+    background-color: #1b1b1b;
+    color: #ffffff;
+
+    font-family: 'Song Myung', serif;
+    
+    background-image: url(./bonobono.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;   
+}
+
+.notice{
+    font-size: 100px;
+    font-weight: 400;
+    margin-bottom: 32px;
+
+    color: red;
+}
+
+.profile-wrapper{
+    display: flex;
+    align-items: center;
+
+    gap: 90px;
+}
+
+.profile{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    font-size: 30px;
+
+}
+
+.image{
+    width: 300px;
+    overflow: hidden;
+    
+    border-style: dashed;
+    border-width: 5px;
+    border-color: bisque;
+}
+
+.image > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image:hover{
+    border-color:aqua;
+}
+
+.orange:hover{
+    transition: all 0.3s;
+    color: orange;
+}
+
+.yellow:hover{
+    transition: all 0.3s;
+    color: yellow;
+}
+
+.green:hover{
+    transition: all 0.3s;
+    color: green;
+}
+
+.blue:hover{
+    transition: all 0.3s;
+    color: blue;
+}
+
+.navy:hover{
+    transition: all 0.3s;
+    color: navy;
+}
+
+.purple:hover{
+    transition: all 0.3s;
+    color: purple;
+}
