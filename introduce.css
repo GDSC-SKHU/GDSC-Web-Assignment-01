@@ -1,0 +1,108 @@
+html, body {
+    background-color: aliceblue;
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes textColorAnimation {
+    0% {color:blue;}
+    30% {color:skyblue;}
+    100% {color:aliceblue;}
+}
+
+header > div {
+    display: inline-block;
+    box-shadow: 5px 5px skyblue;
+}
+
+header > p {
+    margin-top: 60px;
+}
+
+.left {
+    float: left;
+    margin-right: 15px;
+}
+
+p {
+    background: rgb(179, 226, 247);
+    width: 700px;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+}    
+
+.back > p {
+    background: rgb(179, 226, 247);
+    width: 200px;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+#favorite ul li {
+    background: rgb(198, 231, 247);
+    width: 170px;
+}
+
+h1 > img {
+    width: 50px;
+    height: 50px;
+    position: inline-block;
+}
+
+h1 {
+    display: inline-flex;
+    font-weight: bold;
+    border: 5px double darkcyan;
+    box-shadow: 2px 2px skyblue;
+    border-radius: 10px;
+    cursor: help;
+    animation-name: textColorAnimation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+h2 {
+    color: black;
+    text-shadow: 2px 2px 4px dodgerblue;
+    cursor: help;
+}
+
+.menubar ul li {
+    background: paleturquoise;
+}
+
+.menubar ul {
+    padding: 0;
+    margin: 0;
+    width: 800px;
+}
+
+.menubar ul li {
+    display: inline-block;
+    list-style-type: none;
+    padding: 7px 20px;
+    border: solid 2px rgb(162, 160, 241);
+}
+
+.menubar ul li a:hover {
+    background-color: dodgerblue;
+    color: white;
+    transform: translateY(-10px);
+}
+
+.dynamic {
+    all: unset;
+    cursor: pointer;
+    padding: 10px 28px;
+    color: gray;
+    border: solid 1px gray;
+    transition: color 1s 1s, border-color 1s ;
+}
+
+.dynamic:hover {
+    color: skyblue;
+    border-color: white;
+    transform: translateY(-4px);
+}
