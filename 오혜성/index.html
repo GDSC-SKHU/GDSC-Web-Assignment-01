@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>백세희를 소개합니다</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <h1>백세희를 소개합니다</h1>
+    </nav>
+    <main>
+      <section class="card introduce">
+        <div class="introduce__typo">
+          <h2 class="section-heading">소개</h2>
+          <span>학부: 인문융합자율학부</span>
+          <span>거주지: 연신내</span>
+          <span>나이: <span class="js-age">20</span>살</span>
+          <button class="js-age-up">up</button>
+          <button class="js-age-down">down</button>
+        </div>
+
+        <div class="introduce__image">
+          <img src="./image.png" alt="백세희" />
+        </div>
+      </section>
+      <section class="card">
+        <button class="js-modal-open-button">
+          세희님이 좋아하는 거 보러가기
+        </button>
+      </section>
+    </main>
+
+    <section class="modal js-modal">
+      <div>
+        <button class="js-modal-close-button">닫기</button>
+        <p>그것은 바로 가족입니다</p>
+      </div>
+    </section>
+
+    <footer>어쩌구 저쩌구</footer>
+
+    <script src="./age.js"></script>
+    <script src="./modal.js"></script>
+  </body>
+</html>
