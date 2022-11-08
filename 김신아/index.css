@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+  font-size: 1.125rem;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+header {
+  width: 100vw;
+  height: 8vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em;
+  gap: 44em;
+  box-shadow: 0px 5px 3em lightgray;
+}
+
+img {
+  width: 20em;
+  border-radius: 50%;
+}
+
+.header_left {
+  font-size: 1.3em;
+  min-width: fit-content;
+}
+.header_right {
+  display: flex;
+  gap: 3em;
+  min-width: fit-content;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  padding-top: 5em;
+  flex-direction: column;
+}
+
+.profile {
+  padding: 5em 0 0 8em;
+  display: flex;
+  width: 100%;
+  min-width: fit-content;
+}
+.profile_text {
+  width: 30em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  min-width: fit-content;
+}
+.profile_text_Myname {
+  font-size: 3.5em;
+  display: flex;
+  align-items: center;
+}
+
+.blank {
+  width: 8em;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+.profile_major div:first-child :nth-child(2) {
+  color: #1e7fba;
+}
+
+.profile_text_Myname img {
+  display: flex;
+  margin-left: 1em;
+  width: 2em;
+  height: 2em;
+}
+
+.profile_text_plus :first-child {
+  margin-right: 0.5em;
+}
+
+.profile_major {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 7em;
+}
